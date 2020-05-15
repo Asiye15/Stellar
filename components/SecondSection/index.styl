@@ -1,0 +1,166 @@
+_white = #fff
+_gray = #636363
+_lightGray = #dddddd
+_lightPink = #efa8b0
+_lightPurple = #c79cc8
+_lightViolet = #a89cc8
+_lightBlue = #9bb2e1
+_lightCyan = #8cc9f0
+
+.root
+  align-items center
+  margin-bottom 2u
+  border-top-width 1px
+  border-top-color _lightGray
+  padding 6u 3u 2u 3u
+
+  +tablet()
+    padding 8u 6u 4u 6u
+
+  +wide()
+    padding 11u 11u 7u 11u
+
+.title
+  color _gray
+  font-size 32px
+  font-weight 300
+  margin-bottom 11px
+
+.linearLine
+  width 120px
+  height 2px
+  border-radius 2px
+  background-color #a89cc8
+  margin 26px 0 
+
+  +tablet()
+    background-image linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0)
+
+.features
+  margin-bottom 6u
+
+  +tablet()
+    margin-bottom 9u
+    flex-direction row
+
+.feature, .featureFirst, .featureSecond, .featureThird, .featureFourth, .featureFifth
+  align-items center
+  width 320px
+  height 196px
+  padding 24px
+
+  +tablet()
+    width 20%
+
+  +desktop()
+    width 180px
+    height 166px
+
+  +wide()
+    width 202px
+    height 184px
+    padding 28px
+
+.featureFirst
+  background-color _lightPink
+  border-radius 1u 1u 0 0
+
+  +tablet()
+    border-radius 1u 0 0 1u
+
+.featureSecond
+  background-color _lightPurple
+
+.featureThird
+  background-color _lightViolet
+
+.featureFourth
+  background-color _lightBlue
+
+.featureFifth
+  background-color _lightCyan
+  border-radius 0 0 1u 1u
+
+  +tablet()
+    border-radius 0 1u 1u 0
+
+.icon
+  width 70px
+  height @width
+
+  +tablet()
+    width 50px
+    height @width
+
+.iconTitle
+  color _white
+  font-weight 300
+  text-align center
+  margin-top 1u
+  font-size 5u
+
+  +tablet()
+    font-size 3u
+
+  +wide()
+    font-size 38px
+
+.description
+  color _white
+  text-align center
+  font-size 2u
+
+  +wide()
+    font-size 14px
+
+.descriptionTitle
+  color _gray
+  font-weight 300
+  text-align center
+  font-size 2u
+  margin-bottom 4u
+
+  +tablet()
+    font-size 20px
+    margin-bottom 46px
+
+  +wide()
+    font-size 24px
+
+.textDescription
+  color _gray
+  font-weight 300
+  font-size 16px
+  margin-bottom 5u
+  text-align justify
+
+  +tablet()
+    column-count 2
+    font-size 18px
+    margin-bottom 6u
+
+.learnMore
+  border-radius 1u
+  border 1px solid _lightGray 
+  padding 0 3u
+  margin-left 2u
+  justify-content center
+  width 100%
+  height 44px
+
+  +tablet()
+    width 148px
+    height 44px
+
+  +wide()
+    width 172px
+    height 52px
+
+.learnMoreText
+  color _gray
+  font-size 2u
+  font-weight 300
+  text-align center
+
+  +wide()
+    font-size 18px

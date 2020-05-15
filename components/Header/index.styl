@@ -1,0 +1,38 @@
+_white = #fff
+_darkGray = #636363
+
+.root
+  height 0
+  overflow hidden
+
+  +tablet()
+    height 48px
+    background-color #f7f7f7
+    align-self center
+    flex-direction row
+    justify-content center
+    align-items center
+    width 100%
+
+  +wide()
+    height 56px
+
+.section
+  background-color _white
+  border-radius 1u
+  margin 0 5px
+  align-self center
+  height 32px
+  padding 1u 18px
+
+  +wide()
+    height 38px
+    padding 1u 20px
+
+.sectionTitle
+  color _darkGray
+  font-size 14px
+
+  +wide()
+    font-size 16px
+  
