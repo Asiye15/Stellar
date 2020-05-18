@@ -31,7 +31,10 @@ export default observer(function FirstSection () {
       View.linearLine
       View.features
         each feature, index in features
-          View.feature(key=index styleName=index === 0 ? 'first' : '')
+          View.feature(
+            key=index
+            styleName=index === 0 ? 'first' : index === features.length-1 ? 'last' : ''
+          )
             View.iconContent
               View.iconInside
                 FontAwesomeIcon.icon(icon=feature.icon color=feature.color size=60)

@@ -35,7 +35,7 @@ export default observer(function Footer () {
         Text.title Etiam feugiat
         View.info
           each section, index in sections
-            View.options
+            View.options(key=index styleName=index === sections.length-1 ? 'last' : '')
               Text.subSectionTitle= section.title
               Text.sectionDescription(styleName=index === 2 ? 'descriptionEmail' : '')= section.description
         View.icons

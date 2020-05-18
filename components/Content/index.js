@@ -6,7 +6,7 @@ import './index.styl'
 
 export default observer(function Content () {
   return pug`
-    View.root
+    View
       Header
       Introduction
       FirstSection

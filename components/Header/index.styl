@@ -3,35 +3,38 @@ _darkGray = #636363
 
 .root
   display none
+  border-radius 4px 4px 0 0
 
   +tablet()
     display flex
-    height 48px
+    padding 1u 0
     background-color #f7f7f7
-    align-self center
     flex-direction row
     justify-content center
-    align-items center
     width 100%
 
   +wide()
-    height 56px
+    padding 10px 0
 
 .section
   background-color _white
-  border-radius 1u
-  margin 0 5px
+  border-radius 8px
+  margin-left 10px
   align-self center
   height 32px
-  padding 1u 18px
+  padding 1u 0
+  width 154px
+  &.first
+    margin 0
 
   +wide()
     height 38px
-    padding 1u 20px
+    padding 1u 0
 
 .sectionTitle
   color _darkGray
   font-size 14px
+  text-align center
 
   +wide()
     font-size 16px

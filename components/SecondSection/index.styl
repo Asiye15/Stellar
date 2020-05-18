@@ -11,6 +11,7 @@ _lightCyan = #8cc9f0
   align-items center
   border-top-width 1px
   border-top-color _lightGray
+  background-color _white
   padding 6u 3u 4u 3u
 
   +tablet()
@@ -44,14 +45,13 @@ _lightCyan = #8cc9f0
 
 .feature
   align-items center
-  width 320px
-  height 196px
-  padding 24px
+  width 296px
+  padding 26px 24px
   &.0
     background-color _lightPink
-    border-radius 1u 1u 0 0
+    border-radius 8px 8px 0 0
     +tablet()
-      border-radius 1u 0 0 1u
+      border-radius 8px 0 0 8px
   &.1
     background-color _lightPurple
   &.2
@@ -60,21 +60,22 @@ _lightCyan = #8cc9f0
     background-color _lightBlue
   &.4
     background-color _lightCyan
-    border-radius 0 0 1u 1u
+    border-radius 0 0 8px 8px
     +tablet()
-      border-radius 0 1u 1u 0
+      border-radius 0 8px 8px 0
 
   +tablet()
     width 20%
+    padding 26px 30px
+    justify-content center
 
   +desktop()
     width 180px
-    height 166px
+    padding 31px 3.5u
 
   +wide()
     width 202px
-    height 184px
-    padding 28px
+    padding 4u 3.5u
 
 .icon
   width 70px
@@ -127,6 +128,8 @@ _lightCyan = #8cc9f0
   text-align justify
 
   +tablet()
-    column-count 2
     font-size 18px
     margin-bottom 6u
+
+  +desktop()
+    column-count 2

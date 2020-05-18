@@ -1,5 +1,6 @@
 _gray = #636363
 _lightGray = #dddddd
+_white = #fff
 
 .root
   width 100%
@@ -7,6 +8,7 @@ _lightGray = #dddddd
   border-top-color _lightGray
   border-top-width 1px
   align-self center
+  background-color _white
   padding 6u 3u 4u 3u
 
   +tablet()
@@ -25,7 +27,7 @@ _lightGray = #dddddd
   height 2px
   border-radius 2px
   background-color #a89cc8
-  margin 36px 0 26px 26px
+  margin 36px 0 26px
 
   +tablet()
     background-image linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0)
@@ -46,11 +48,16 @@ _lightGray = #dddddd
   margin-bottom 4u
   &.first
     margin-left 0
+  &.last
+    margin 0
+    +desktop()
+      margin-left 4u
 
   +tablet()
     width 44%
-
+  
   +desktop()
+    margin-left 4u
     width 28%
 
 .iconContent
