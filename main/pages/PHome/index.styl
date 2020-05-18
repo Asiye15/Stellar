@@ -3,22 +3,20 @@ _violet = #6b5b95
 .root
   flex 1
   background-color _violet
+
+  +tablet()
+    padding 0 32px
   
 .main
   align-self center
   flex 1
-
-  +mobile()
-    width 344px
-
-  @media (max-width: 768px)
-    width 94%
+  width 344px
 
   +tablet()
-    width 94%
+    width 100%
 
   +desktop()
-    width 1024px
+    max-width 1024px
 
   +wide()
-    width 1194px
+    max-width 1194px

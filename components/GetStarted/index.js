@@ -1,6 +1,7 @@
 import React from 'react'
 import { observer } from 'startupjs'
-import { View, Text, TouchableOpacity } from 'react-native'
+import { LearnMoreButton } from 'components'
+import { View, Text } from 'react-native'
 import './index.styl'
 
 export default observer(function GetStarted ({ style }) {
@@ -12,9 +13,7 @@ export default observer(function GetStarted ({ style }) {
         | Donec imperdiet consequat consequat. Suspendisse feugiat congue
         | posuere. Nulla massa urna, fermentum eget quam aliquet.
       View.buttons
-        TouchableOpacity.getStarted
-          Text.getStartedText Get Started
-        TouchableOpacity.learnMore
-          Text.learnMoreText Learn More
+        LearnMoreButton(getStarted='getStarted')
+        LearnMoreButton
   `
 })

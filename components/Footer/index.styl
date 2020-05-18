@@ -2,7 +2,7 @@ _white = #fff
 _lightGray = #dddddd
 
 .root
-  margin-bottom 2u
+  margin-bottom 6u
   padding 6u 3u 2u 3u
 
   +tablet()
@@ -15,55 +15,55 @@ _lightGray = #dddddd
   +wide()
     padding 10u 10u 6u 10u
 
-.section
+.sections
   margin-bottom 6u
 
   +desktop()
     width 48%
-    margin-left 4u
+    &.rightSection
+      margin-left 4u
 
 .info
-  flex-direction row
   margin-bottom 5u
-
-.rightSection
-  margin-right 2u
+  width 100%
 
 .subSectionTitle
   font-weight 400
   color _white
-  margin-right 2u
-  margin-bottom 2u
-  font-size 2u
+  font-size 14px
+  width 80px
 
   +wide()
     font-size 18px
+    width 100px
 
-.sectionDescription, .descriptionEmail
+.options
+  flex-direction row
+  margin-bottom 2u
+  width 100%
+
+.sectionDescription
   color rgba(_white, 0.65)
   font-weight 300
-  margin-bottom 2u
-  font-size 2u
+  font-size 14px
   flex-wrap wrap
+  max-width 380px
+  flex 1
+  &.descriptionEmail
+    border-bottom 1px dotted rgba(_white, 0.65)
+    max-width 154px
+
+    +wide()
+      width 195px
 
   +wide()
     font-size 18px
-
-.descriptionEmail
-  border-bottom 1px dotted rgba(_white, 0.65)
-  width 176px
-
-  +desktop()
-    width 156px
-
-  +wide()
-    width 192px
 
 .title
   color _white
   font-weight 300
   margin-bottom 3u
-  font-size 3u
+  font-size 22px
 
   +desktop()
     font-size 28px
@@ -78,34 +78,8 @@ _lightGray = #dddddd
   +wide()
     font-size 18px
 
-.learnMore
-  border-radius 1u
-  border 1px solid _lightGray 
-  padding 0 3u
-  justify-content center
-  width 100%
-  height 44px
-
-  +tablet()
-    width 148px
-    height 44px
-
-  +wide()
-    width 172px
-    height 52px
-
-.learnMoreText
-  color _white
-  font-weight 300
-  font-size 2u
-  text-align center
-
-  +wide()
-    font-size 18px
-
 .icons
   flex-direction row
-  margin-bottom 4u
 
 .iconInside
   border 1px solid rgba(_white, 0.35)

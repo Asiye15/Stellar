@@ -9,29 +9,28 @@ _lightCyan = #8cc9f0
 
 .root
   align-items center
-  margin-bottom 2u
   border-top-width 1px
   border-top-color _lightGray
-  padding 6u 3u 2u 3u
+  padding 6u 3u 4u 3u
 
   +tablet()
-    padding 8u 6u 4u 6u
+    padding 8u 6u 6u 6u
 
   +wide()
-    padding 11u 11u 7u 11u
+    padding 11u 11u 9u 11u
 
 .title
   color _gray
   font-size 32px
   font-weight 300
-  margin-bottom 11px
 
 .linearLine
   width 120px
   height 2px
   border-radius 2px
   background-color #a89cc8
-  margin 26px 0 
+  margin-top 4.5u
+  margin-bottom 3.25u
 
   +tablet()
     background-image linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0)
@@ -43,11 +42,27 @@ _lightCyan = #8cc9f0
     margin-bottom 9u
     flex-direction row
 
-.feature, .featureFirst, .featureSecond, .featureThird, .featureFourth, .featureFifth
+.feature
   align-items center
   width 320px
   height 196px
   padding 24px
+  &.0
+    background-color _lightPink
+    border-radius 1u 1u 0 0
+    +tablet()
+      border-radius 1u 0 0 1u
+  &.1
+    background-color _lightPurple
+  &.2
+    background-color _lightViolet
+  &.3
+    background-color _lightBlue
+  &.4
+    background-color _lightCyan
+    border-radius 0 0 1u 1u
+    +tablet()
+      border-radius 0 1u 1u 0
 
   +tablet()
     width 20%
@@ -60,29 +75,6 @@ _lightCyan = #8cc9f0
     width 202px
     height 184px
     padding 28px
-
-.featureFirst
-  background-color _lightPink
-  border-radius 1u 1u 0 0
-
-  +tablet()
-    border-radius 1u 0 0 1u
-
-.featureSecond
-  background-color _lightPurple
-
-.featureThird
-  background-color _lightViolet
-
-.featureFourth
-  background-color _lightBlue
-
-.featureFifth
-  background-color _lightCyan
-  border-radius 0 0 1u 1u
-
-  +tablet()
-    border-radius 0 1u 1u 0
 
 .icon
   width 70px
@@ -138,29 +130,3 @@ _lightCyan = #8cc9f0
     column-count 2
     font-size 18px
     margin-bottom 6u
-
-.learnMore
-  border-radius 1u
-  border 1px solid _lightGray 
-  padding 0 3u
-  margin-left 2u
-  justify-content center
-  width 100%
-  height 44px
-
-  +tablet()
-    width 148px
-    height 44px
-
-  +wide()
-    width 172px
-    height 52px
-
-.learnMoreText
-  color _gray
-  font-size 2u
-  font-weight 300
-  text-align center
-
-  +wide()
-    font-size 18px
