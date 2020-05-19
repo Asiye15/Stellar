@@ -15,8 +15,12 @@ _lightGray = #dddddd
     padding 10u 10u 12u 10u
 
 .sections
+  margin-bottom 6u
+  &.rightSection
+    margin 0
   +desktop()
     width 48%
+    margin-bottom 0
     &.rightSection
       margin-left 4u
 
@@ -68,7 +72,7 @@ _lightGray = #dddddd
     font-size 28px
 
 .description
-  margin-bottom 5u
+  margin-bottom 4u
   color rgba(_white, 0.65)
   line-height 3u
   font-weight 300
@@ -76,6 +80,7 @@ _lightGray = #dddddd
 
   +wide()
     font-size 18px
+    margin-bottom 5u
 
 .icons
   flex-direction row
@@ -84,7 +89,7 @@ _lightGray = #dddddd
   border 1px solid rgba(_white, 0.35)
   align-items center
   justify-content center
-  margin-right 12px
+  margin-right 1.5u
   width 5u
   height @width
   border-radius @width

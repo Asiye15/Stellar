@@ -24,7 +24,7 @@
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.13.0",
     "@fortawesome/free-solid-svg-icons": "^5.12.0",
-    "@startupjs/ui": "^0.22.0-alpha.0",
+    "@startupjs/ui": "^0.22.0-alpha.25",
     "axios": "^0.19.2",
     "nconf": "^0.10.0",
     "patch-package": "^6.2.2",
@@ -39,7 +39,7 @@
     "react-native-svg": "^12.1.0",
     "react-native-web": "^0.12.0",
     "source-map-support": "^0.5.19",
-    "startupjs": "^0.22.0-alpha.0"
+    "startupjs": "^0.22.0-alpha.25"
   },
   "devDependencies": {
     "@hot-loader/react-dom": "^16.13.0",

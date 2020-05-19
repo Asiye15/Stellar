@@ -1,7 +1,7 @@
 import React from 'react'
 import { observer } from 'startupjs'
 import { LearnMoreButton } from 'components'
-import { View, Text } from 'react-native'
+import { View, Text, TouchableOpacity } from 'react-native'
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
 import { faTwitter, faFacebookF, faInstagram, faGithub, faDribbble } from '@fortawesome/free-brands-svg-icons'
 import './index.styl'
@@ -40,7 +40,7 @@ export default observer(function Footer () {
               Text.sectionDescription(styleName=index === 2 ? 'descriptionEmail' : '')= section.description
         View.icons
           each icon in icons
-            View.iconInside
+            TouchableOpacity.iconInside
               FontAwesomeIcon.icon(icon=icon color=WHITE_COLOR size=20)
   `
 })
