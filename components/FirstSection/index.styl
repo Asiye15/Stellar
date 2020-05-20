@@ -48,9 +48,12 @@ _white = #fff
   &.first
     margin-left 0
   &.last
-    margin 0
+    +tablet()
+      margin-top 4u
+      margin-bottom 0
     +desktop()
       margin-left 4u
+      margin-top 0
 
   +tablet()
     width 44%
@@ -73,7 +76,7 @@ _white = #fff
     width 194px
     height @width
     border-radius 194px
-    padding 1u
+    padding 1.25u
 
   +wide()
     width 224px

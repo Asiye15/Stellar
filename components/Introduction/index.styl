@@ -6,13 +6,17 @@ _white = #fff
   align-items center
   padding 6u 3u 4u 3u
   background-color _white
+  border-radius 4px 4px 0 0
 
   +tablet()
     padding 8u 6u 6u 6u
+    border-top-left-radius 0
+    border-top-right-radius 0
 
   +desktop()
     flex-direction row
     justify-content space-between
+    border-radius 0 0 0 0
 
   +wide()
     padding 11u 11u 9u 11u
