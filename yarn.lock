@@ -1024,6 +1024,13 @@
   dependencies:
     "@fortawesome/fontawesome-common-types" "^0.2.28"
 
+"@fortawesome/free-brands-svg-icons@^5.13.0":
+  version "5.13.0"
+  resolved "https://registry.npmjs.org/@fortawesome/free-brands-svg-icons/-/free-brands-svg-icons-5.13.0.tgz#e79de73ba6555055204828dca9c0691e7ce5242b"
+  integrity sha512-/6xXiJFCMEQxqxXbL0FPJpwq5Cv6MRrjsbJEmH/t5vOvB4dILDpnY0f7zZSlA8+TG7jwlt12miF/yZpZkykucA==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.2.28"
+
 "@fortawesome/free-solid-svg-icons@^5.12.0":
   version "5.13.0"
   resolved "https://registry.npmjs.org/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-5.13.0.tgz#44d9118668ad96b4fd5c9434a43efc5903525739"
@@ -1392,11 +1399,13 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@startupjs/app@^0.22.0-alpha.13":
-  version "0.22.0-alpha.13"
-  resolved "https://registry.npmjs.org/@startupjs/app/-/app-0.22.0-alpha.13.tgz#9edbec6c10015f7e4186a2dd1d799e673c46f232"
-  integrity sha512-JyPC1NPJK1yry62n2BpH54h8xOWxIk63QoWtJrGaZSAHMm3Km6ySLfOXVqz6RQShLcQSUa5DCIZEVifzWwiWIQ==
+"@startupjs/app@^0.22.0-alpha.25":
+  version "0.22.0-alpha.25"
+  resolved "https://registry.npmjs.org/@startupjs/app/-/app-0.22.0-alpha.25.tgz#528ed12f51c2edad518ccfb90555c38663d566c5"
+  integrity sha512-t5+juxcd8gp1IvHu3DoSNmsMIkJMd7iN+6sfBmG2RJnB3lMfWE6I17HH5E0rnxdi0zraNx2XIK7f4XeLJvlmMQ==
   dependencies:
+    "@startupjs/babel-plugin-rn-stylename-to-style" "^0.22.0-alpha.24"
+    decode-uri-component "0.2.0"
     lodash "4.x"
     qs "6.9.3"
     react-router "^5.1.2"
@@ -1431,10 +1440,18 @@
     postcss-modules-values "^1.3.0"
     stylus "^0.54.5"
 
-"@startupjs/backend@^0.22.0-alpha.0":
-  version "0.22.0-alpha.0"
-  resolved "https://registry.npmjs.org/@startupjs/backend/-/backend-0.22.0-alpha.0.tgz#90f2c66406e3d84ebc3791ccd3d03676e3221de3"
-  integrity sha512-SXeEsqk/Y9TLUvAP4T4+0GC0+jNdDDei94Dz/VHszER4Iuho+Orw61h9/UPWjXR62J8Vu+tzg+nHD2UcvwbkPQ==
+"@startupjs/babel-plugin-rn-stylename-to-style@^0.22.0-alpha.24":
+  version "0.22.0-alpha.24"
+  resolved "https://registry.npmjs.org/@startupjs/babel-plugin-rn-stylename-to-style/-/babel-plugin-rn-stylename-to-style-0.22.0-alpha.24.tgz#bcdb677b2f794825144273fc69f4ab14fd26fe31"
+  integrity sha512-sReN9lbZiea4s0/t576v7xA/33gy1/MKf7T39XgML1EY9vv3dlh1VKASmf8XLNRTxestVjmkxSGiPAWEnJroBQ==
+  dependencies:
+    "@nx-js/observer-util" "^4.1.3"
+    react-native-dynamic-style-processor "^0.21.0"
+
+"@startupjs/backend@^0.22.0-alpha.24":
+  version "0.22.0-alpha.24"
+  resolved "https://registry.npmjs.org/@startupjs/backend/-/backend-0.22.0-alpha.24.tgz#e6634d0d4417c90133156f654a06ce10eccb66ac"
+  integrity sha512-Vs+CAOdXsLM2ClMAHE+RuRFR5Ki4KMdRxlec+bzzFAzaYtykfskOuoVmFFcQ9dJqFlJY4F5wy8K0U2p8tg+V9Q==
   dependencies:
     mongodb "^2.2.31"
     racer "0.9.9"
@@ -1447,10 +1464,10 @@
     sharedb-mongo "1.0.0-beta.9"
     sharedb-redis-pubsub "1.0.0-beta.1"
 
-"@startupjs/bundler@^0.22.0-alpha.18":
-  version "0.22.0-alpha.18"
-  resolved "https://registry.npmjs.org/@startupjs/bundler/-/bundler-0.22.0-alpha.18.tgz#8de6fdacdb7c2fdefb1e1c65e379e7f432ee6038"
-  integrity sha512-lxT8ud3LMH/m2LBlKc0DdgJHUsv7W4sAQVLVeUXg17FsEbwAreA5PIYmJROnzqcSbb30jXGWWhmVZ0a5eclZ3Q==
+"@startupjs/bundler@^0.22.0-alpha.24":
+  version "0.22.0-alpha.24"
+  resolved "https://registry.npmjs.org/@startupjs/bundler/-/bundler-0.22.0-alpha.24.tgz#25e6f3116ea45bbb670a35fbf00da3538e0e448b"
+  integrity sha512-HiDt8lO/UUeon1bIccUJnSNtY8g4QjerQAlut7DS0ScDLNfwJe+8XsorBBkCNk7AqDWg5pqAYwUHVj837hqetQ==
   dependencies:
     "@babel/polyfill" "^7.8.0"
     "@dmapper/stylus-hash-plugin" "0.0.1"
@@ -1460,7 +1477,7 @@
     assets-webpack-plugin "^3.9.10"
     autoprefixer "^9.6.0"
     babel-loader "^8.0.6"
-    babel-preset-startupjs "^0.22.0-alpha.0"
+    babel-preset-startupjs "^0.22.0-alpha.24"
     css-loader "^1.0.0"
     css-to-react-native-transform "^1.8.1"
     file-loader "^2.0.0"
@@ -1480,10 +1497,10 @@
     terser-webpack-plugin "^1.1.0"
     webpack-node-externals "^1.7.2"
 
-"@startupjs/cli@^0.22.0-alpha.16":
-  version "0.22.0-alpha.16"
-  resolved "https://registry.npmjs.org/@startupjs/cli/-/cli-0.22.0-alpha.16.tgz#00a545ac92235741891c17313c45cbfbbae6353e"
-  integrity sha512-FNDz1wNbBsJlm791uZuiVItOf62zM01bDnQ2MkQu1QiR4YK9Op30Ywtdqsare1bxFB7VyPzAp5Fb1oSTtlvLcw==
+"@startupjs/cli@^0.22.0-alpha.24":
+  version "0.22.0-alpha.24"
+  resolved "https://registry.npmjs.org/@startupjs/cli/-/cli-0.22.0-alpha.24.tgz#97c22710020be239810a21f497d1d86c7a4c756e"
+  integrity sha512-2vY4wUK25hLMXZ2aEzKonJbLCU5SUkShJhlvIByEQRBRuJ1JyghiPdjbsO3X8dX2zl8yIjXD0lRnYPs8FYUI4w==
   dependencies:
     commander "^3.0.1"
     concurrently "^4.1.2"
@@ -1494,69 +1511,112 @@
     webpack-cli "^3.3.8"
     webpack-dev-server "^3.8.0"
 
-"@startupjs/hooks@^0.22.0-alpha.0":
-  version "0.22.0-alpha.0"
-  resolved "https://registry.npmjs.org/@startupjs/hooks/-/hooks-0.22.0-alpha.0.tgz#b9b1dbe3416094e56bc9bf37e8ec627af3ccf4b4"
-  integrity sha512-IEvcur14IwDhUdh418SOFXp22qTIGlTRUKBb/TJ6XZ/NHCJ7lDtRyoF4jnESSbD13HPiS9AhKcAE56+f+RL04A==
+"@startupjs/hooks@^0.22.0-alpha.24":
+  version "0.22.0-alpha.24"
+  resolved "https://registry.npmjs.org/@startupjs/hooks/-/hooks-0.22.0-alpha.24.tgz#5ebce7b3b4633a0a9d7404855e81ff7a60d6911b"
+  integrity sha512-BF7Pqm0zrVw5PTdfZfZ9TQd562J9mQbKeXG87SJueHjdf7E7HSx95VwM/Y9Dyd2pTko5dJCX9lmgfhe+mXT8cQ==
 
-"@startupjs/init@^0.22.0-alpha.13":
-  version "0.22.0-alpha.13"
-  resolved "https://registry.npmjs.org/@startupjs/init/-/init-0.22.0-alpha.13.tgz#617217c504cbf1c327fce7efc958cfa6b24a8a1a"
-  integrity sha512-J1E8DtLzNpHHlRXC7LhMfc3fSMsS3a1pgRC7Bmp9OzsnSk3fpNKdZ6ACog8l8DB/iJJcSv1dmklxA/Q5Rrf5TQ==
+"@startupjs/init@^0.22.0-alpha.24":
+  version "0.22.0-alpha.24"
+  resolved "https://registry.npmjs.org/@startupjs/init/-/init-0.22.0-alpha.24.tgz#29d7bce14c830c0b2904fb7104b29139884cd1d6"
+  integrity sha512-qF+OLgAZjfeGrKNHS2uHOA31TaYgcPIdhc9vblq2r1aDk0zr2HvF6V1pUrzKVozOTHYUbYsnon4E5cE/B7uE7w==
   dependencies:
-    "@startupjs/react-sharedb" "^0.22.0-alpha.13"
+    "@startupjs/react-sharedb" "^0.22.0-alpha.24"
     racer "0.9.9"
     rich-text "^4.0.0"
     sharedb "^1.0.0"
 
-"@startupjs/isomorphic-helpers@^0.22.0-alpha.0":
-  version "0.22.0-alpha.0"
-  resolved "https://registry.npmjs.org/@startupjs/isomorphic-helpers/-/isomorphic-helpers-0.22.0-alpha.0.tgz#17a6075ff881f4741264449c1373b8aceb397615"
-  integrity sha512-OPWe/G8hF3cuvyV00LOhXSgh9iNwPnrm98tOy859aG4vfL2/TvTuyrhc03rY7xYJRF4y8p5JPVSYo9n1Fpzbqg==
+"@startupjs/isomorphic-helpers@^0.22.0-alpha.24":
+  version "0.22.0-alpha.24"
+  resolved "https://registry.npmjs.org/@startupjs/isomorphic-helpers/-/isomorphic-helpers-0.22.0-alpha.24.tgz#f0a72279cbd0f263c7fd1170e517247690b7a674"
+  integrity sha512-HlkGLhErfjGEv6dARkJ/9bWSwEXpd51NQ15QScHM8Sz0MYyeBcNVPY36twkRwVqK/WEmV/bRRqG0rSpHdwOq8w==
 
-"@startupjs/model@^0.22.0-alpha.0":
-  version "0.22.0-alpha.0"
-  resolved "https://registry.npmjs.org/@startupjs/model/-/model-0.22.0-alpha.0.tgz#a09a5bcec2d2507b62de00aa314dddeb378ddacf"
-  integrity sha512-EMlEDUuA54COcevGe0Wm8vCoXHs+G3/Ajsq2qgudakTk6PTFsRpUYuL6xsXIiciR2n1DAYM/yrmYOpDTNAj8Yw==
+"@startupjs/model@^0.22.0-alpha.24":
+  version "0.22.0-alpha.24"
+  resolved "https://registry.npmjs.org/@startupjs/model/-/model-0.22.0-alpha.24.tgz#0b232283f2203c3e1369d964d4e36ddb444d669a"
+  integrity sha512-YuACTvYPc3S/8dDe9H7rAUGoellnm9UmlrNZDeyCoupkVZB1awjGkmw4QiFRC6tVk7s42R6hnFgqYEtkh75ocg==
   dependencies:
     racer "0.9.9"
     racer-highway "^8.1.0"
 
-"@startupjs/orm@^0.22.0-alpha.11":
-  version "0.22.0-alpha.11"
-  resolved "https://registry.npmjs.org/@startupjs/orm/-/orm-0.22.0-alpha.11.tgz#af464735bffd60f68176b38c141eca348f92ec9c"
-  integrity sha512-AwdlQdiO7wiviMeGZ9EodVPu5rHv6Lkuf7uGDgL2oKfJW8EDsRklJWZqHvgrvAETYZ1e/EjCcXEugKshD6miIQ==
+"@startupjs/orm@^0.22.0-alpha.24":
+  version "0.22.0-alpha.24"
+  resolved "https://registry.npmjs.org/@startupjs/orm/-/orm-0.22.0-alpha.24.tgz#23d688d362ea78f348b73311e8805bc896ddc5a7"
+  integrity sha512-wEYdjtCYFngk7eS9GXzi8EfT4boRflw51Eau8x4NaBEF2hnjtbqWFzhcdrKdRT0Px2ZPB1Z8wpMMxoxc80u2cA==
   dependencies:
     racer "0.9.9"
 
-"@startupjs/react-sharedb@^0.22.0-alpha.13":
-  version "0.22.0-alpha.13"
-  resolved "https://registry.npmjs.org/@startupjs/react-sharedb/-/react-sharedb-0.22.0-alpha.13.tgz#11c83f0e8a9e26da63f1cdb661cfff4143fd4b3a"
-  integrity sha512-QgJcqqgy2/HdbDFGGeHWto6jEH/6eXnIxu+jmLRh1f9yENl/Mo7r7avLLhGD2JWyyrl+GkHjKZNMLX+HS2KtIw==
+"@startupjs/react-sharedb-classes@^0.22.0-alpha.24":
+  version "0.22.0-alpha.24"
+  resolved "https://registry.npmjs.org/@startupjs/react-sharedb-classes/-/react-sharedb-classes-0.22.0-alpha.24.tgz#0144c2b08aa5a59237a2f9b633660f3489245172"
+  integrity sha512-wEELAFjMaCOZPKHAYGlT4UPhbWaleijzxwG8SDDhLwAyyXb04mqXFvtC/aFgIR5zETKHQ+waMOrTUIg5F1x68Q==
   dependencies:
     "@nx-js/observer-util" "^4.1.3"
-    "@startupjs/model" "^0.22.0-alpha.0"
+    "@startupjs/model" "^0.22.0-alpha.24"
+    "@startupjs/react-sharedb-util" "^0.22.0-alpha.24"
+    co "~4.6.0"
     hoist-non-react-statics "^1.2.0"
     lodash "4.x"
     racer "0.9.9"
     rich-text "^4.0.0"
 
-"@startupjs/routes-middleware@^0.22.0-alpha.0":
-  version "0.22.0-alpha.0"
-  resolved "https://registry.npmjs.org/@startupjs/routes-middleware/-/routes-middleware-0.22.0-alpha.0.tgz#734f8097813cdf2e0404daf82fd25281d6dace0e"
-  integrity sha512-fkJZeMTCKPMIJD/mOVoYCWLl+DNbIkvi80hmXSBuM/ZMi78yL7H5PmWx9NzLpD4jovtKd3e5L8C4I6NUq2QNCw==
+"@startupjs/react-sharedb-hooks@^0.22.0-alpha.24":
+  version "0.22.0-alpha.24"
+  resolved "https://registry.npmjs.org/@startupjs/react-sharedb-hooks/-/react-sharedb-hooks-0.22.0-alpha.24.tgz#41de702bde814633ab80678b0c0b74110e99f3a0"
+  integrity sha512-DJ0ewVwt7exdP+gOiiUEFZQgLtjkyXathOwi4XooASLmp0A64sGo0/dH3kbGqJjWox3PIhBF9O1k7R0OUaWlTw==
+  dependencies:
+    "@nx-js/observer-util" "^4.1.3"
+    "@startupjs/model" "^0.22.0-alpha.24"
+    "@startupjs/react-sharedb-util" "^0.22.0-alpha.24"
+    co "~4.6.0"
+    hoist-non-react-statics "^1.2.0"
+    lodash "4.x"
+    racer "0.9.9"
+    rich-text "^4.0.0"
+
+"@startupjs/react-sharedb-util@^0.22.0-alpha.24":
+  version "0.22.0-alpha.24"
+  resolved "https://registry.npmjs.org/@startupjs/react-sharedb-util/-/react-sharedb-util-0.22.0-alpha.24.tgz#f2b0441cfd41310c1169e0a713bd0b3009e57376"
+  integrity sha512-zTv9ZOtxXIp/hEMummAGgfTBiIKsRBjDGGmPnL7vf9MHEflgLzA2S6YqIaE8IxaiUbSf+hy0EcPgzbdVUE7vzQ==
+  dependencies:
+    "@nx-js/observer-util" "^4.1.3"
+    "@startupjs/model" "^0.22.0-alpha.24"
+    hoist-non-react-statics "^1.2.0"
+    lodash "4.x"
+    racer "0.9.9"
+    rich-text "^4.0.0"
+
+"@startupjs/react-sharedb@^0.22.0-alpha.24":
+  version "0.22.0-alpha.24"
+  resolved "https://registry.npmjs.org/@startupjs/react-sharedb/-/react-sharedb-0.22.0-alpha.24.tgz#ecb52d30be0fb85153019f1c9a4cbd3df46c3d6e"
+  integrity sha512-Dxq3uufpf+pXIgFAe6/w+A/DTkRuLMyGpcpG72xUwEa429DEy18aDaglBHHjn/ATpwQz03xRiYQXrI+beVVpSQ==
+  dependencies:
+    "@nx-js/observer-util" "^4.1.3"
+    "@startupjs/model" "^0.22.0-alpha.24"
+    "@startupjs/react-sharedb-classes" "^0.22.0-alpha.24"
+    "@startupjs/react-sharedb-hooks" "^0.22.0-alpha.24"
+    "@startupjs/react-sharedb-util" "^0.22.0-alpha.24"
+    hoist-non-react-statics "^1.2.0"
+    lodash "4.x"
+    racer "0.9.9"
+    rich-text "^4.0.0"
+
+"@startupjs/routes-middleware@^0.22.0-alpha.24":
+  version "0.22.0-alpha.24"
+  resolved "https://registry.npmjs.org/@startupjs/routes-middleware/-/routes-middleware-0.22.0-alpha.24.tgz#f547a351d0964c6d5ea44e5b16338128514cf794"
+  integrity sha512-lozeUCCZnPoRviZkfTqsFlDJSehWDceGk/z6IzKqjIWY+eh8QAXwjkhALDgYbXXqBzASjAGqng9+mh+uJNbQig==
   dependencies:
     lodash "4.x"
     react-router "^5.1.2"
     react-router-config "^5.1.1"
 
-"@startupjs/server@^0.22.0-alpha.0":
-  version "0.22.0-alpha.0"
-  resolved "https://registry.npmjs.org/@startupjs/server/-/server-0.22.0-alpha.0.tgz#bcc5852895254c88f3cf51cd1d0ab07d2287ac4d"
-  integrity sha512-PIGWC4THgclAEuc05vxvJkBHaKFxR2yzJDtwEqpya5vrsDzb1X3oUi6AhDX+eJj6itG5oa27DzlPiqt6hQeKPg==
+"@startupjs/server@^0.22.0-alpha.24":
+  version "0.22.0-alpha.24"
+  resolved "https://registry.npmjs.org/@startupjs/server/-/server-0.22.0-alpha.24.tgz#759a375601fb5a942cf2d5606646cbbcc5c87bf7"
+  integrity sha512-TsJOsP8W3Tb/pUvuhRl8vGAI+VpJK4GQa/k3G19H+Rfc265ag06HgweLwrJAXYiffI+6oOGTBmx+p6LKsPXfRw==
   dependencies:
-    "@startupjs/backend" "^0.22.0-alpha.0"
-    "@startupjs/routes-middleware" "^0.22.0-alpha.0"
+    "@startupjs/backend" "^0.22.0-alpha.24"
+    "@startupjs/routes-middleware" "^0.22.0-alpha.24"
     body-parser "~1.6.7"
     compression "^1.6.0"
     connect-mongo "^1.3.2"
@@ -1568,10 +1628,10 @@
     method-override "~2.3.10"
     racer-highway "^8.1.0"
 
-"@startupjs/ui@^0.22.0-alpha.0":
-  version "0.22.0-alpha.18"
-  resolved "https://registry.npmjs.org/@startupjs/ui/-/ui-0.22.0-alpha.18.tgz#8ce57b22c582d2343f6ec58e615bd354f7aaeefd"
-  integrity sha512-WR1JXS4GhYf8Xy5OVGFTfoGWMx+UQNl41MTrmYXClSIgJPyM1Z2YE2FofOw7IGg7BLEvYSztdT32Bf7zJHHt+g==
+"@startupjs/ui@^0.22.0-alpha.25":
+  version "0.22.0-alpha.25"
+  resolved "https://registry.npmjs.org/@startupjs/ui/-/ui-0.22.0-alpha.25.tgz#4c495102898749d4605b3b8dffec7402ef6547f0"
+  integrity sha512-sjm02TxXrAcXdSfEy+rRTYqmB3k4VxCbxG8hLYyJhb1vyN/bZJ8pb5Jv9pcfy4lVc4LUUUNMWfnWEOaQSO0udQ==
   dependencies:
     "@fortawesome/fontawesome-svg-core" "^1.2.26"
     "@fortawesome/free-solid-svg-icons" "^5.12.0"
@@ -2644,13 +2704,6 @@ babel-plugin-module-resolver@^3.2.0:
     reselect "^3.0.1"
     resolve "^1.4.0"
 
-babel-plugin-react-native-dynamic-stylename-to-style@^0.14.0:
-  version "0.14.0"
-  resolved "https://registry.npmjs.org/babel-plugin-react-native-dynamic-stylename-to-style/-/babel-plugin-react-native-dynamic-stylename-to-style-0.14.0.tgz#12cad64d07351cf07574646c7cf2b242c2f3d38f"
-  integrity sha512-bH5pbjd3nLjZCoI7beGJ3BSBmfRv8O6TidS8G+cSqP87o+32Pwj2wzrPBD6MHnCcALzV6ThGmx0hSSoi+oDDzg==
-  dependencies:
-    react-native-dynamic-style-processor "^0.21.0"
-
 babel-plugin-react-native-platform-specific-extensions@^1.1.1:
   version "1.1.1"
   resolved "https://registry.npmjs.org/babel-plugin-react-native-platform-specific-extensions/-/babel-plugin-react-native-platform-specific-extensions-1.1.1.tgz#78f8581af7424cf7d9eea33f3276d9ee21f4c8a4"
@@ -2729,10 +2782,10 @@ babel-preset-jest@^24.9.0:
     "@babel/plugin-syntax-object-rest-spread" "^7.0.0"
     babel-plugin-jest-hoist "^24.9.0"
 
-babel-preset-startupjs@^0.22.0-alpha.0:
-  version "0.22.0-alpha.0"
-  resolved "https://registry.npmjs.org/babel-preset-startupjs/-/babel-preset-startupjs-0.22.0-alpha.0.tgz#1accdc0aee6d16c3ae76be4c7ab1a5aa82dd80e0"
-  integrity sha512-V0CMWgj65zJnaMYZgVWK6F7LnqWldStsYjO+M06zmDDXv3j/LX5bBCpfeKVOODO2oYUig/SXN+wHbTQ574tOGg==
+babel-preset-startupjs@^0.22.0-alpha.24:
+  version "0.22.0-alpha.24"
+  resolved "https://registry.npmjs.org/babel-preset-startupjs/-/babel-preset-startupjs-0.22.0-alpha.24.tgz#3d87932994aa1145ba5963c45abb3fbcc4c3d37c"
+  integrity sha512-0axFSI+ooFAapPR6zKH8vRidRmQ1UQyYibRq5Z1ITiIT7ML1BPKEOmL3+odyQXrRaBuJKB9NWVFCPyFAO9T2Fg==
   dependencies:
     "@babel/core" "^7.9.0"
     "@babel/plugin-proposal-decorators" "^7.8.0"
@@ -2740,8 +2793,8 @@ babel-preset-startupjs@^0.22.0-alpha.0:
     "@babel/runtime" "^7.9.0"
     "@startupjs/babel-plugin-dotenv-import" "1002.0.0"
     "@startupjs/babel-plugin-react-css-modules" "1701.0.0"
+    "@startupjs/babel-plugin-rn-stylename-to-style" "^0.22.0-alpha.24"
     babel-plugin-module-resolver "^3.2.0"
-    babel-plugin-react-native-dynamic-stylename-to-style "^0.14.0"
     babel-plugin-react-native-platform-specific-extensions "^1.1.1"
     babel-plugin-react-native-web-pass-classname "^0.2.1"
     babel-plugin-react-pug-classnames "^0.3.1"
@@ -3488,7 +3541,7 @@ clone@^1.0.2:
   resolved "https://registry.npmjs.org/clone/-/clone-1.0.4.tgz#da309cc263df15994c688ca902179ca3c7cd7c7e"
   integrity sha1-2jCcwmPfFZlMaIypAheco8fNfH4=
 
-co@^4.6.0:
+co@^4.6.0, co@~4.6.0:
   version "4.6.0"
   resolved "https://registry.npmjs.org/co/-/co-4.6.0.tgz#6ea6bdf3d853ae54ccb8e47bfa0bf3f9031fb184"
   integrity sha1-bqa989hTrlTMuOR7+gvz+QMfsYQ=
@@ -4257,7 +4310,7 @@ decamelize@^1.0.0, decamelize@^1.1.1, decamelize@^1.2.0:
   resolved "https://registry.npmjs.org/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
   integrity sha1-9lNNFRSCabIDUue+4m9QH5oZEpA=
 
-decode-uri-component@^0.2.0:
+decode-uri-component@0.2.0, decode-uri-component@^0.2.0:
   version "0.2.0"
   resolved "https://registry.npmjs.org/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
   integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
@@ -10466,6 +10519,11 @@ react-native-dynamic-style-processor@^0.21.0:
     micro-memoize "^2.0.3"
     react-native-css-media-query-processor "^0.21.1"
 
+react-native-linear-gradient@^2.5.6:
+  version "2.5.6"
+  resolved "https://registry.npmjs.org/react-native-linear-gradient/-/react-native-linear-gradient-2.5.6.tgz#96215cbc5ec7a01247a20890888aa75b834d44a0"
+  integrity sha512-HDwEaXcQIuXXCV70O+bK1rizFong3wj+5Q/jSyifKFLg0VWF95xh8XQgfzXwtq0NggL9vNjPKXa016KuFu+VFg==
+
 react-native-status-bar-height@^2.5.0:
   version "2.5.0"
   resolved "https://registry.npmjs.org/react-native-status-bar-height/-/react-native-status-bar-height-2.5.0.tgz#bc0fb85230603850aab9667ee8111a62954de90c"
@@ -11790,22 +11848,22 @@ stacktrace-parser@^0.1.3:
   dependencies:
     type-fest "^0.7.1"
 
-startupjs@^0.22.0-alpha.0:
-  version "0.22.0-alpha.18"
-  resolved "https://registry.npmjs.org/startupjs/-/startupjs-0.22.0-alpha.18.tgz#5563973f1c6e5962a00a42d81dc4b6cb968dfec4"
-  integrity sha512-EdP1llNOIT0YkzAW0rBL/9sillFfMvmw5+yzTXry37KmWikXb9+8/4TPsGrp7Fq6GmZtlVEDNP6BaL9VKO98bw==
+startupjs@^0.22.0-alpha.25:
+  version "0.22.0-alpha.25"
+  resolved "https://registry.npmjs.org/startupjs/-/startupjs-0.22.0-alpha.25.tgz#add9178eb2fa759bedceca422f4677342653e37f"
+  integrity sha512-iYZnbEjonMAggsz/YC1tM2rmbE/HP99eIMMhwmffskjK3wkdOSqsyANzwYTPfxR1g5j7eP6K0F913hzIxtw9dQ==
   dependencies:
-    "@startupjs/app" "^0.22.0-alpha.13"
-    "@startupjs/backend" "^0.22.0-alpha.0"
-    "@startupjs/bundler" "^0.22.0-alpha.18"
-    "@startupjs/cli" "^0.22.0-alpha.16"
-    "@startupjs/hooks" "^0.22.0-alpha.0"
-    "@startupjs/init" "^0.22.0-alpha.13"
-    "@startupjs/isomorphic-helpers" "^0.22.0-alpha.0"
-    "@startupjs/orm" "^0.22.0-alpha.11"
-    "@startupjs/react-sharedb" "^0.22.0-alpha.13"
-    "@startupjs/server" "^0.22.0-alpha.0"
-    babel-preset-startupjs "^0.22.0-alpha.0"
+    "@startupjs/app" "^0.22.0-alpha.25"
+    "@startupjs/backend" "^0.22.0-alpha.24"
+    "@startupjs/bundler" "^0.22.0-alpha.24"
+    "@startupjs/cli" "^0.22.0-alpha.24"
+    "@startupjs/hooks" "^0.22.0-alpha.24"
+    "@startupjs/init" "^0.22.0-alpha.24"
+    "@startupjs/isomorphic-helpers" "^0.22.0-alpha.24"
+    "@startupjs/orm" "^0.22.0-alpha.24"
+    "@startupjs/react-sharedb" "^0.22.0-alpha.24"
+    "@startupjs/server" "^0.22.0-alpha.24"
+    babel-preset-startupjs "^0.22.0-alpha.24"
 
 state-toggle@^1.0.0:
   version "1.0.3"

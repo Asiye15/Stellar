@@ -1,14 +1,16 @@
 import React from 'react'
 import { observer } from 'startupjs'
-import { ScrollView } from 'react-native'
-import { TestComponent } from 'components'
+import { ScrollView, View } from 'react-native'
+import { Content, Footer, Logo } from 'components'
 import './index.styl'
-import { Content } from '@startupjs/ui'
 
 export default observer(function PHome () {
   return pug`
     ScrollView.root
-      Content
-        TestComponent
+      View.main
+        Logo
+        Content
+        Footer
+          
   `
 })
